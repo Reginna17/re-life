@@ -4,7 +4,7 @@
 .game{
     color:antiquewhite;
     font-size: 90px;
-    font-family: 'Andellia Davilton', sans-serif;
+    font-family: 'Brush Script MT', cursive;
     margin-top: 15px;
     margin-bottom: 5px;
     text-align: center;
@@ -53,4 +53,11 @@
     height: 100%;
     z-index: -1;
     object-fit: cover;
+}
+.media{
+    font-size: 30px;
+    cursor: pointer;
+}
+.hide{
+	display: none;
 }
