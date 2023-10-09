@@ -35,7 +35,7 @@ mediaBtn.addEventListener("click",function(){
     }}
 )
 startBtn.addEventListener("click",function(){
-    console.log("這樣會出現嗎")
+    console.log("要換影片了")
     let storyHtml =`
         <div class="storybegin"> 
             <div class="firstvideo" id="firstvideo"></div>
