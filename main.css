@@ -120,6 +120,7 @@ video {
 }
 .content{
     height: 80vh;
+    width: 100%;
 }
 .topic{
     color:azure;
@@ -154,4 +155,17 @@ video {
 }
 .choose:active{
     cursor: wait;
+}
+.telling{
+    height: 70%;
+    width: 70%;
+    margin-block: 15%;
+    margin-inline: auto;
+    display: flex;
+    font-size: 55px;
+    color:antiquewhite;
+    justify-content: center;
+    align-items: center;
+    font-family :fantasy,monospace;
+    background-color: rgba(0, 0, 0, 0.452);
 }

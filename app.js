@@ -7,10 +7,13 @@ let mediaBtn=document.getElementById("media")
 let titlepic=document.getElementById("titlepic")
 let mediapic=document.getElementById("mediapic")
 let audio = document.getElementById("backgroundAudio")
-let firstvideo = document.getElementById("firstvideo") //應片按鈕
+let firstvideo = document.getElementById("firstvideo")
 let board =document.querySelector('.board')
 let selections = document.querySelector('.selections')
 let music = document.getElementById('music')
+let gameStatus = "start"
+console.log(qa)
+
 startBtn.addEventListener("click",function(){
     console.log("哈士奇又來了")
     selections.innerHTML = "";
@@ -34,17 +37,17 @@ informationBtn.addEventListener("click",function(){
 mediaBtn.addEventListener("click",function(){
     if (audio.paused) {
         audio.play();
-        mediapic.src="musicon.png"
+        mediapic.src="picture/musicon.png"
     }else {
         audio.pause();
-        mediapic.src="musicstop.png"
+        mediapic.src="picture/musicstop.png"
     }
 })
 startBtn.addEventListener("click",function(){
     console.log("要換影片了")
     let storyHtml = `
         <div class="storybegin"> 
-            <video class="faint" id="faint" autoplay src="開頭.mp4" type="video/mp4"></video>
+            <video class="faint" id="faint" autoplay src="media/開頭.mp4" type="video/mp4"></video>
             <div class="nextstyle" id="nextbottom">&#128315;</div>
         </div>`;
     board.insertAdjacentHTML('beforeend', storyHtml);
@@ -54,7 +57,7 @@ startBtn.addEventListener("click",function(){
         console.log("遊戲開始啦")
         faintvideo.style.display ="none";
         board.innerHTML = ""
-        changePic("ON NG??", "接受放置鼻胃管","拒絕放置鼻胃管", "NG.jpg")
+        changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
     })
 });
 function changePic(topic, yes, no, background){
@@ -70,6 +73,57 @@ function changePic(topic, yes, no, background){
     </div>    
     `;
     board.insertAdjacentHTML('beforeend', storyHtml);
-    //let yes =document.getElementById("yes")
-    //let no =document.getElementById("no")
+    let yesBtn =document.getElementById("yes")
+    let noBtn =document.getElementById("no")
+    yesBtn.addEventListener("click", function(){
+        console.log("哈士奇很可愛")
+        answer("yes")
+    })
+    noBtn.addEventListener("click", function(){
+        console.log("柴犬很可愛")
+        answer("no")
+    })
+}
+function skipPic(telling,skipPic){
+    board.innerHTML = ""
+    gamepic.src = skipPic
+    let skipHtml =`
+    <div class="content">
+        <div class="telling">${telling}</dov>
+        <div class="nextstyle" id="nextbottom">&#128315;</div>
+    </div>
+    `;
+    board.insertAdjacentHTML('beforeend',skipHtml);
+    let nextstyleBtn = document.getElementById("nextbottom")
+    nextstyleBtn.addEventListener("click",function(){
+        console.log("遊戲開始啦")
+        answer("next")
+    })
+}
+function answer(ans){
+    if (ans ==="yes"){
+        gameStatus = qa[gameStatus].yes.nextStatus
+        if (qa[gameStatus].selection){
+            changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].qs[gameStatus].pic)
+        }else{
+            console.log("skipPic")
+            skipPic(qa[gameStatus].title, qa[gameStatus].pic)
+        }
+    } else if (ans === "no"){
+        gameStatus = qa[gameStatus].no.nextStatus
+        if (qa[gameStatus].selection){
+            changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
+        }else{
+            console.log("skipPic")
+            skipPic(qa[gameStatus].title, qa[gameStatus].pic)
+        }
+    } else {
+        gameStatus = qa[gameStatus].nextStatus
+        if (qa[gameStatus].selection){
+            changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
+        }else{
+            console.log("skipPic")
+            skipPic(qa[gameStatus].title, qa[gameStatus].pic)
+        }
+    }
 }
