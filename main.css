@@ -185,23 +185,23 @@ video {
 }
 @media (max-width:700px){
     .selections {
-        font-size: 20px;
+        font-size: 23px;
         width: 100%;
         letter-spacing: 2px;
     }
     .board{
-        min-height: 50vh;
+        min-height: 60vh;
         width: 100%;
     }
     .background-title{
-        max-width: 50%;
-        width: 300px;
-        margin-top: 20px;
-        margin-left: 20px;
+        max-width: 65%;
+        width: 350px;
+        margin-top: 25px;
+        margin-left: 25px;
     }
     .mediapic{
-        width: 2.5%;
-        height: 2.5%;
+        width: 8%;
+        height: 8%;
     }
     .gamestart{
         font-size: 20px;
@@ -222,19 +222,19 @@ video {
     }
     .topic{
         color:azure;
-        font-size: 30px;
+        font-size: 22px;
         margin-top: 10px;
     }
     .yesNo{
         height: 40%;
         display: flex;
         position: relative;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 20px;
 
     }
     .choose{
-        padding: 40px;
+        padding: 35px;
     }
     .storySkip{
         height: 60%;
