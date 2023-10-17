@@ -229,12 +229,9 @@ video {
         height: 40%;
         display: flex;
         position: relative;
-        font-size: 20px;
-        color:antiquewhite;
-        justify-content: center;
-        align-items: center;
-        font-family :fantasy,monospace;
-        overflow-wrap: break-word;
+        font-size: 15px;
+        line-height: 20px;
+
     }
     .choose{
         padding: 40px;
