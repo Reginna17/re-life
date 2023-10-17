@@ -3,11 +3,11 @@
 }
 .selections{
     color:azure;
-    font-size: 28px;
-    font-family :fantasy,monospace;
+    font-size: 25px;
+    font-family :fantasy;
     width: 100%;
     position: fixed;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 0;
     text-align: center;
 
@@ -130,19 +130,20 @@ video {
     position: relative;
     letter-spacing: 3px;
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.277);
 }
 .yesNo{
-    height: 100%;
+    height: 30%;
     display: flex;
     position: relative;
-    font-size: 30px;
+    font-size: 25px;
     color:antiquewhite;
     justify-content: center;
     align-items: center;
     font-family :fantasy,monospace;
+    overflow-wrap: break-word;
 }
 .choose{
     padding: 40px;
@@ -157,15 +158,91 @@ video {
     cursor: wait;
 }
 .telling{
+    color:azure;
+    font-size: 35px;
+    font-family :fantasy,monospace;
+    width: 100%;
+    position: relative;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.277);
+}
+.storySkip{
     height: 70%;
-    width: 70%;
-    margin-block: 15%;
+    width: 80%;
+    margin-block: 5%;
     margin-inline: auto;
     display: flex;
-    font-size: 38px;
+    font-size: 28px;
     color:antiquewhite;
     justify-content: center;
     align-items: center;
     font-family :fantasy,monospace;
     background-color: rgba(0, 0, 0, 0.452);
+    overflow-wrap: break-word;
+}
+@media only screen and (max-width:700px){
+    .selections {
+        font-size: 20px;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    .board{
+        min-height: 50vh;
+        width: 100%;
+    }
+    .background-title{
+        max-width: 50%;
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .mediapic{
+        width: 2.5%;
+        height: 2.5%;
+    }
+    .gamestart{
+        font-size: 20px;
+        width: 100%;
+    }
+    .firstvideo{
+        position: relative;
+        width: 85%;
+        overflow: hidden;
+        z-index: -1000;
+    }
+    video {
+        min-width: 75%;
+        min-height: 75%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .topic{
+        color:azure;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .yesNo{
+        height: 40%;
+        display: flex;
+        position: relative;
+        font-size: 20px;
+        color:antiquewhite;
+        justify-content: center;
+        align-items: center;
+        font-family :fantasy,monospace;
+        overflow-wrap: break-word;
+    }
+    .choose{
+        padding: 40px;
+    }
+    .storySkip{
+        height: 60%;
+        width: 75%;
+        margin-block: 15%;
+        font-size: 20px;
+    }
 }

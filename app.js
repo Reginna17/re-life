@@ -13,7 +13,6 @@ let selections = document.querySelector('.selections')
 let music = document.getElementById('music')
 let gameStatus = "start"
 console.log(qa)
-
 startBtn.addEventListener("click",function(){
     console.log("哈士奇又來了")
     selections.innerHTML = "";
@@ -57,15 +56,18 @@ startBtn.addEventListener("click",function(){
         console.log("遊戲開始啦")
         faintvideo.style.display ="none";
         board.innerHTML = ""
-        changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
+        audio.play();
+        
+        changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
     })
 });
-function changePic(topic, yes, no, background){
+function changePic(topic, storySkip, yes, no, background){
     board.innerHTML = ""
     gamepic.src = background
     let storyHtml = `
     <div class="content">
         <div class="topic">${topic}</div>
+        <div class="storySkip">${storySkip}</div>
         <div class="yesNo">
             <div class="choose" id="yes">${yes}</div>
             <div class="choose" id="no">${no}</div>
@@ -84,12 +86,13 @@ function changePic(topic, yes, no, background){
         answer("no")
     })
 }
-function skipPic(telling,skipPic){
+function skipPic(telling,skipPic,storySkip){
     board.innerHTML = ""
     gamepic.src = skipPic
     let skipHtml =`
     <div class="content">
-        <div class="telling">${telling}</dov>
+        <div class="telling">${telling}</div>
+        <div class="storySkip">${storySkip}</div>
         <div class="nextstyle" id="nextbottom">&#128315;</div>
     </div>
     `;
@@ -104,26 +107,26 @@ function answer(ans){
     if (ans ==="yes"){
         gameStatus = qa[gameStatus].yes.nextStatus
         if (qa[gameStatus].selection){
-            changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].qs[gameStatus].pic)
+            changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
         }else{
             console.log("skipPic")
-            skipPic(qa[gameStatus].title, qa[gameStatus].pic)
+            skipPic(qa[gameStatus].title, qa[gameStatus].pic, qa[gameStatus].storySkip)
         }
     } else if (ans === "no"){
         gameStatus = qa[gameStatus].no.nextStatus
         if (qa[gameStatus].selection){
-            changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
+            changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
         }else{
             console.log("skipPic")
-            skipPic(qa[gameStatus].title, qa[gameStatus].pic)
+            skipPic(qa[gameStatus].title, qa[gameStatus].pic, qa[gameStatus].storySkip)
         }
     } else {
         gameStatus = qa[gameStatus].nextStatus
         if (qa[gameStatus].selection){
-            changePic(qa[gameStatus].title, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
+            changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
         }else{
             console.log("skipPic")
-            skipPic(qa[gameStatus].title, qa[gameStatus].pic)
+            skipPic(qa[gameStatus].title, qa[gameStatus].pic, qa[gameStatus].storySkip)
         }
     }
 }
