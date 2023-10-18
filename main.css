@@ -61,7 +61,7 @@
 .gamestart{
     color:azure;
     font-size: 25px;
-    font-family :fantasy, sans-serif;
+    font-family :Chalkduster, fantasy;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -73,7 +73,7 @@
 .storyplay{
     color:azure;
     font-size: 25px;
-    font-family :fantasy, sans-serif;
+    font-family :Chalkduster, fantasy;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -125,7 +125,7 @@ video {
 .topic{
     color:azure;
     font-size: 38px;
-    font-family :fantasy,monospace;
+    font-family :Chalkduster, fantasy;
     width: 100%;
     position: relative;
     letter-spacing: 3px;
@@ -142,7 +142,7 @@ video {
     color:antiquewhite;
     justify-content: center;
     align-items: center;
-    font-family :fantasy,monospace;
+    font-family :Chalkduster, fantasy;
     overflow-wrap: break-word;
 }
 .choose{
@@ -152,7 +152,6 @@ video {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     cursor: pointer;
-    text-shadow: 1px 1px;
 }
 .choose:active{
     cursor: wait;
@@ -160,7 +159,7 @@ video {
 .telling{
     color:azure;
     font-size: 35px;
-    font-family :fantasy,monospace;
+    font-family :Chalkduster, fantasy;
     width: 100%;
     position: relative;
     letter-spacing: 3px;
@@ -179,7 +178,7 @@ video {
     color:antiquewhite;
     justify-content: center;
     align-items: center;
-    font-family :fantasy,monospace;
+    font-family :Chalkduster, fantasy;
     background-color: rgba(0, 0, 0, 0.452);
     overflow-wrap: break-word;
 }
