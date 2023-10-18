@@ -185,16 +185,17 @@ video {
 }
 @media (max-width:700px){
     .selections {
-        font-size: 23px;
+        font-size: 20px;
         width: 100%;
         letter-spacing: 2px;
+        line-height: 19px;
     }
     .board{
         min-height: 60vh;
         width: 100%;
     }
     .background-title{
-        max-width: 65%;
+        max-width: 70%;
         width: 350px;
         margin-top: 25px;
         margin-left: 25px;
@@ -222,11 +223,12 @@ video {
     }
     .topic{
         color:azure;
-        font-size: 22px;
+        font-size: 23px;
         margin-top: 10px;
+        line-height: 18px;
     }
     .yesNo{
-        height: 40%;
+        height: 35%;
         display: flex;
         position: relative;
         font-size: 20px;
@@ -234,13 +236,13 @@ video {
 
     }
     .choose{
-        padding: 35px;
+        padding: 30px;
     }
     .storySkip{
         height: 60%;
         width: 75%;
         margin-block: 15%;
         font-size: 20px;
-        line-height: 22px;
+        line-height: 20px;
     }
 } 
