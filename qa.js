@@ -108,14 +108,14 @@ let qa = {
         "selection": false,
         "title": "家人無法接受",
         "storySkip": "這什麼破醫院爛醫師<br>他的狀況才沒有這麼糟糕<br>我們不相信他沒辦法再治療了<br>人家總說西醫治標不治本<br>聽鄰居說有位中醫師特別厲害<br>好幾個癌症都被他給看好了<br>我們現在就趕快出院帶他去治",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic15.jpg",
         "nextStatus": "J" 
     },
     "I":{
         "selection": true,
         "title": "會診安寧共照及轉介照護",
         "storySkip": "在安寧病房裡，身體的不舒服得到了相當大的改善<br>醫師建議我們可以居家安寧或者到機構休養<br>回家需要照顧人力和設備<br>申請居家安寧後醫師和護理師會依照要訪視<br>在家中照顧上有問題，可以聯絡護理師諮詢<br>護理師也能協助幫病人更換管路<br><br>而長期照護機構必須要全額自費<br>長時間下來是一筆非常大的開銷<br>可以接受安寧或癌症的機構目前偏少數<br>若病人需要緊急醫療處理，還是會被送往醫院",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic9.png",
         "yes": {
             "title":"居家安寧",
             "nextStatus": "7"
@@ -129,84 +129,84 @@ let qa = {
         "selection": false,
         "title": "接受中醫治療",
         "storySkip": "半夜時分，病人突然全身大力抽搐不止<br>臉色蒼白呼吸一度停止<br>我們緊張地叫了救護車趕往急診<br>他的狀況危急，必須要插管急救<br>但他的病歷顯示是腦癌末期",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic16.jpg",
         "nextStatus": "M" 
     },
     "7":{
         "selection": false,
         "title": "居家安寧",
         "storySkip": "家裡面的空間及人力是允許的<br>也希望病人可以在自己所熟悉的環境裡治療，甚至接受死亡",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic10.png",
         "nextStatus": "K" 
     },
     "K":{
         "selection": false,
         "title": "返家後的生活",
         "storySkip": "在居家安寧的醫療團隊幫助下，我們知道什麼是瀕死症狀<br>當這些症狀出現時，該如何處理才能讓病人舒服",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic11.png",
         "nextStatus": "aEND" 
     },
     "aEND":{
         "selection": false,
         "title": "返家後的生活",
         "storySkip": "我們可以陪伴病人更安心地在家往生<br>並且跟他道謝、道歉、道愛跟道別<br>學習如何放下<br>在他離世時，他是好看的，平靜地躺著，就像是睡著了一般",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic12.png",
         "nextStatus": "ENDING" 
     },
     "8":{
         "selection": false,
         "title": "長照機構",
         "storySkip": "短暫照顧上的人力可行<br>面臨長期照顧，家人都必須要上班賺錢，實在無法做到<br>家中空間狹窄，沒辦法擺放病人所需的設備<br>雖然知道必須負擔一筆費用<br>但我認為有專業的人員照顧還是最好",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic10.png",
         "nextStatus": "L" 
     },
     "L":{
         "selection": false,
         "title": "長照困難",
         "storySkip": "當初醫師告知只剩下半年的時間<br>卻沒想到......如今已過了6年<br>機構的費用，早已成為我們日常生活的一部分<br>生活即便再困苦，我們還是希望他能夠受到好的照護<br>但我們還是抱持著哪天他奇蹟般的醒來，甚至開口喊我們的名字",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic13.png",
         "nextStatus": "bEND"  
     },
     "bEND":{
         "selection": false,
         "title": "長照悲歌",
         "storySkip": "但他只是一個躺在病床上<br>維持基本的新陳代謝，卻無法溝通和思考的植物人<br>任由機構的照顧服務員翻動身體<br>我們作為他的家人<br>我們是這世界上最了解他的人<br>這真的是他所想要的嗎?<br>我握著他的手反覆的思考<br>如果他還能做決定時......",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic14.png",
         "nextStatus": "ENDING"
     },
     "M":{
         "selection": false,
         "title": "插管",
         "storySkip": "插管急救雖然可以暫時維持呼吸<br>卻無法改變腦部不可逆損傷之事實<br>醫師這樣告知我們<br>但我們不想失去他<br>所以請醫生一定要救到底，醫師及護理師便為他開始插管及CPR<br>他的身上多了更多管子，機器的聲音和醫護人員的聲音圍繞著腦海",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic16.jpg",
         "nextStatus": "N"
     },
     "N":{
         "selection": false,
         "title": "如果...可以重來",
         "storySkip": "急救30分鐘後仍搶救無效<br>醫師宣告了他的死亡時間",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic16.jpg",
         "nextStatus": "cEND"
     },
     "cEND":{
         "selection": false,
         "title": "如果...可以重來",
         "storySkip": "我們很難過...<br>看到他因急救造成胸前凹陷，氣管內管布滿血跡<br>我們更是痛苦的說不出話<br>我們相互凝視，就像是在問對方<br>我們這樣做是正確的嗎?",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic16.jpg",
         "nextStatus": "ENDING"
         },
     "2":{
         "selection": false,
         "title": "不放鼻胃管",
         "storySkip": "得了癌症之後，食欲越來越差<br>但還是有想吃東西的時候<br>雖然偶爾會嗆咳，但我還是希望從嘴巴進食<br>這樣才能享受到食物的味道<br>我將不放鼻胃管的決定告知了醫師<br>醫師尊重我的想法",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic17.jpg",
         "nextStatus": "dEND"
     },
     "dEND":{
         "selection": false,
         "title": "我想為自己做決定",
         "storySkip": "他將最近醫界推動的「預立醫療照護諮商」資訊遞給了我<br>剎那間，有了預立醫療決定的決心<br>不管是為了自己，還是為了家人......",
-        "pic": "picture/NG.jpg",
+        "pic": "picture/pic18.jpg",
         "nextStatus": "ENDING"
     },
 }
