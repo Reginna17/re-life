@@ -209,8 +209,8 @@ video {
         margin-left: 25px;
     }
     .mediapic{
-        width: 8%;
-        height: 8%;
+        width: 3%;
+        height: 5%;
     }
     .gamestart{
         font-size: 20px;
@@ -249,5 +249,12 @@ video {
         margin-block: 15%;
         font-size: 21px;
         line-height: 22px;
+    }
+    .nextstyle{
+        width: 4%;
+        height: 8%;
+        margin-bottom: 10px;
+        left: 90%;
+        top: 83%;
     }
 } 
