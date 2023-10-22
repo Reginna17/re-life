@@ -27,27 +27,27 @@ startBtn.addEventListener("click",function(){
 videoBtn.addEventListener("click", shark)
 function shark(){
     console.log("鯊魚寶寶來了喔( ´థ౪థ）σ")
-    window.location.href="https://www.youtube.com/watch?v=iYxQgkOH-hA"
+    window.location.href="https://youtube.com/shorts/uRO-LvRrPFA?feature=share"
 }
 informationBtn.addEventListener("click",function(){
     console.log("長官我可以加薪嗎QAQ")
-    window.location.href="https://hpcod.mohw.gov.tw/HospWeb/RWD/PageType/acp/introduction.aspx"
+    window.location.href="https://www1.cgmh.org.tw/intr/intr2/c0910/department/%E6%9E%97%E5%8F%A3%E7%A4%BE%E6%9C%8D%E8%AA%B2/excursion12.html"
 })
 mediaBtn.addEventListener("click",function(){
     if (audio.paused) {
         audio.play();
-        mediapic.src="picture/musicon.png"
+        mediapic.src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/musicon.png"
     }else {
         audio.pause();
-        mediapic.src="picture/musicstop.png"
+        mediapic.src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/musicstop.png"
     }
 })
 startBtn.addEventListener("click",function(){
     console.log("要換影片了")
     let storyHtml = `
         <div class="storybegin"> 
-            <video class="faint" id="faint" autoplay src="media/開頭.mp4" type="video/mp4"></video>
-            <div class="nextstyle" id="nextbottom">&#128315;</div>
+            <video class="faint" id="faint" autoplay src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/開頭.mp4" type="video/mp4"></video>
+            <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/moveNext.png"></img>
         </div>`;
     board.insertAdjacentHTML('beforeend', storyHtml);
     let nextstyleBtn = document.getElementById("nextbottom")
@@ -57,7 +57,6 @@ startBtn.addEventListener("click",function(){
         faintvideo.style.display ="none";
         board.innerHTML = ""
         audio.play();
-        
         changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
     })
 });
@@ -93,8 +92,8 @@ function skipPic(telling,skipPic,storySkip){
     <div class="content">
         <div class="telling">${telling}</div>
         <div class="storySkip">${storySkip}</div>
-        <div class="nextstyle" id="nextbottom">&#128315;</div>
-    </div>
+        <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/moveNext.png"></img>
+        </div>
     `;
     board.insertAdjacentHTML('beforeend',skipHtml);
     let nextstyleBtn = document.getElementById("nextbottom")

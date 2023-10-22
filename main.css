@@ -10,6 +10,7 @@
     letter-spacing: 3px;
     margin-bottom: 0;
     text-align: center;
+    user-select: none;
 
 }
 .selection:hover{
@@ -51,8 +52,9 @@
     margin-left: 25px;
 }
 .mediapic{
-    width: 2.5%;
-    height: 2.5%;
+    width: 3%;
+    height: 5%;
+    left: 10%;
     cursor: pointer;
 }
 .hide{
@@ -69,6 +71,7 @@
     text-align: center;
     position:relative;
     letter-spacing: 5px;
+    user-select: none;
 }
 .storyplay{
     color:azure;
@@ -81,6 +84,7 @@
     text-align: center;
     position:relative;
     letter-spacing: 5px;
+    user-select: none;
 }
 .firstvideo{
     position: relative;
@@ -100,7 +104,8 @@ video {
     object-fit: cover;
 }
 .nextstyle{
-    font-size: 45px;
+    width: 5%;
+    height: 10%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -133,6 +138,7 @@ video {
     margin-top: 15px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.277);
+    user-select: none;
 }
 .yesNo{
     height: 30%;
@@ -144,6 +150,7 @@ video {
     align-items: center;
     font-family :Chalkduster, fantasy;
     overflow-wrap: break-word;
+    user-select: none;
 }
 .choose{
     padding: 40px;
@@ -167,6 +174,7 @@ video {
     margin-top: 20px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.277);
+    user-select: none;
 }
 .storySkip{
     height: 70%;
@@ -181,6 +189,7 @@ video {
     font-family :Chalkduster, fantasy;
     background-color: rgba(0, 0, 0, 0.452);
     overflow-wrap: break-word;
+    user-select: none;
 }
 @media (max-width:700px){
     .selections {
