@@ -151,7 +151,7 @@ let qa = {
         "title": "善終",
         "storySkip": "我們可以陪伴病人更安心地在家往生<br>並且跟他道謝、道歉、道愛跟道別<br>學習如何放下<br>在他離世時，他是好看的，平靜地躺著，就像是睡著了一般",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/pic12.png",
-        "nextStatus": "pc19" 
+        "nextStatus": "pic19" 
     },
     "8":{
         "selection": false,
