@@ -148,10 +148,10 @@ let qa = {
     },
     "aEND":{
         "selection": false,
-        "title": "返家後的生活",
+        "title": "善終",
         "storySkip": "我們可以陪伴病人更安心地在家往生<br>並且跟他道謝、道歉、道愛跟道別<br>學習如何放下<br>在他離世時，他是好看的，平靜地躺著，就像是睡著了一般",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/pic12.png",
-        "nextStatus": "ENDING" 
+        "nextStatus": "pc19" 
     },
     "8":{
         "selection": false,
@@ -172,7 +172,7 @@ let qa = {
         "title": "長照悲歌",
         "storySkip": "但他只是一個躺在病床上<br>維持基本的新陳代謝，卻無法溝通和思考的植物人<br>任由機構的照顧服務員翻動身體<br>我們作為他的家人<br>我們是這世界上最了解他的人<br>這真的是他所想要的嗎?<br>我握著他的手反覆的思考<br>如果他還能做決定時......",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/pic14.png",
-        "nextStatus": "ENDING"
+        "nextStatus": "pic20"
     },
     "M":{
         "selection": false,
@@ -193,7 +193,7 @@ let qa = {
         "title": "如果...可以重來",
         "storySkip": "我們很難過...<br>看到他因急救造成胸前凹陷，氣管內管布滿血跡<br>我們更是痛苦的說不出話<br>我們相互凝視，就像是在問對方<br>我們這樣做是正確的嗎?",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/pic16.jpg",
-        "nextStatus": "ENDING"
+        "nextStatus": "pic21"
         },
     "2":{
         "selection": false,
@@ -205,8 +205,57 @@ let qa = {
     "dEND":{
         "selection": false,
         "title": "我想為自己做決定",
-        "storySkip": "他將最近醫界推動的「預立醫療照護諮商」資訊遞給了我<br>剎那間，有了預立醫療決定的決心<br>不管是為了自己，還是為了家人......",
+        "storySkip": "他將最近醫界推動的「預立醫療照護諮商」資訊遞給了我<br>剎那間，有了預立醫療決定的決心",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/pic18.jpg",
+        "nextStatus": "pic22"
+    },
+    "pic19":{
+        "selection": false,
+        "title": "讓自己決定如何說再見",
+        "storySkip": "多年後，隨著時代進步<br>病人自主權立法的推行<br>醫療文化不再重視家庭及醫療父權主義<br>而是將決定權交還給病人",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/19.png",
+        "nextStatus": "pic191"
+    },
+    "pic191":{
+        "selection": false,
+        "title": "讓自己決定如何說再見",
+        "storySkip": "確保了病人即使昏迷或無法清楚表達<br>其意願仍能獲得保障<br>也降低家屬或醫療委任代理人的自責及內疚感",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/19.png",
+        "nextStatus": "ENDING"
+    },
+    "pic20":{
+        "selection": false,
+        "title": "加工賴活不如好死",
+        "storySkip": "隨著醫療科技不斷進步<br>加工賴活也越來越不如好死<br>如果疾病痊癒已經不再可能<br>要選擇減輕痛苦平靜的走？<br>還是在急救和電擊中存活？",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/20.png",
+        "nextStatus": "ENDING"
+    },
+    "pic21":{
+        "selection": false,
+        "title": "家人的壓力",
+        "storySkip": "整理他的房間時<br>預立醫療決定手冊引起了我的好奇心<br>使我停下手邊的動作<br>沒想到一張紙條從書裡飄落掉到地上",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/21.png",
+        "nextStatus": "pic211"
+    },
+    "pic211":{
+        "selection": false,
+        "title": "家人的壓力",
+        "storySkip": "「不要為你們所做的決定而感到內疚或自責」<br>「我永遠都知道你們一直是我最愛的家人」<br>「也很抱歉，讓你們承受了做決定的壓力」",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/21.png",
+        "nextStatus": "ENDING"
+    },
+    "pic22":{
+        "selection": false,
+        "title": "預立醫療照護諮商",
+        "storySkip": "這幾天反覆思考<br>看著醫師遞給我的資訊<br>我屬於腦腫瘤末期<br>是符合簽署預立醫療決定的病人<br>但簽署之前還是需要找其他家人一起去門診跟諮商小組仔細會談了解內容",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/22.png",
+        "nextStatus": "pic23"
+    },
+    "pic23":{
+        "selection": false,
+        "title": "為自己做決定",
+        "storySkip": "從小到大，一直希望能被認同<br>總是走在父母規劃好的道路上<br>一輩子都在為了別人而活<br>而這次我想為了自己做一次選擇<br>也為了家人們將來不會有任何愧疚與壓力",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/23.png",
         "nextStatus": "ENDING"
     },
 }

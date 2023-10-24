@@ -27,7 +27,7 @@ startBtn.addEventListener("click",function(){
 videoBtn.addEventListener("click", shark)
 function shark(){
     console.log("鯊魚寶寶來了喔( ´థ౪థ）σ")
-    window.location.href="https://youtube.com/shorts/uRO-LvRrPFA?feature=share"
+    window.location.href="https://youtu.be/RgkogvXAy9Q?si=gZ0OXJrKPq9sG9jB"
 }
 informationBtn.addEventListener("click",function(){
     console.log("長官我可以加薪嗎QAQ")
@@ -46,8 +46,8 @@ startBtn.addEventListener("click",function(){
     console.log("要換影片了")
     let storyHtml = `
         <div class="storybegin"> 
-            <video class="faint" id="faint" autoplay src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/開頭.mp4" type="video/mp4"></video>
-            <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/moveNext.png"></img>
+            <video class="faint" id="faint" autoplay src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/最終更新影片.mov" type="video/mp4"></video>
+            <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/forward.png"></img>
         </div>`;
     board.insertAdjacentHTML('beforeend', storyHtml);
     let nextstyleBtn = document.getElementById("nextbottom")
@@ -92,7 +92,7 @@ function skipPic(telling,skipPic,storySkip){
     <div class="content">
         <div class="telling">${telling}</div>
         <div class="storySkip">${storySkip}</div>
-        <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/moveNext.png"></img>
+        <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/forward.png"></img>
         </div>
     `;
     board.insertAdjacentHTML('beforeend',skipHtml);
@@ -102,7 +102,24 @@ function skipPic(telling,skipPic,storySkip){
         answer("next")
     })
 }
+function ending(background){
+    board.innerHTML = ""
+    gamepic.src = background
+    let endingHtml = `
+    <div class="content">
+        <div class="topic">我的選擇...?</div>
+        <div class="storySkip">不論選擇哪種方式<br>我們都該為自己的決定負責<br>我們都能決定要用什麼方式說再見</div>
+        <div class="QAtest" id="QA">玩完遊戲後有什麼想說的話嗎?幫我們寫份問券吧~</div>
+    </div>    
+    `;
+    board.insertAdjacentHTML('beforeend', endingHtml);
+    let QAtest = document.getElementById("QA")
+    QAtest.addEventListener("click",function(){
+        window.location.href="https://www.surveycake.com/s/eYoRX"
+    })
+} 
 function answer(ans){
+    console.log(qa[gameStatus].nextStatus)
     if (ans ==="yes"){
         gameStatus = qa[gameStatus].yes.nextStatus
         if (qa[gameStatus].selection){
@@ -119,6 +136,9 @@ function answer(ans){
             console.log("skipPic")
             skipPic(qa[gameStatus].title, qa[gameStatus].pic, qa[gameStatus].storySkip)
         }
+    } else if (qa[gameStatus].nextStatus ==="ENDING"){
+        console.log("出現ACP")
+        ending("https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/24.png")
     } else {
         gameStatus = qa[gameStatus].nextStatus
         if (qa[gameStatus].selection){

@@ -105,7 +105,7 @@ video {
 }
 .nextstyle{
     width: 5%;
-    height: 10%;
+    height: 8%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -190,6 +190,23 @@ video {
     background-color: rgba(0, 0, 0, 0.452);
     overflow-wrap: break-word;
     user-select: none;
+}
+.QAtest{
+    margin-inline: auto;
+    display: flex;
+    font-size: 28px;
+    color:rgb(241, 235, 226);
+    justify-content: center;
+    align-items: center;
+    font-family :Chalkduster, fantasy;
+    background-color: rgba(26, 26, 26, 0.538);
+    overflow-wrap: break-word;
+    user-select: none;
+}
+.QAtest:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
 }
 @media (max-width:700px){
     .selections {
