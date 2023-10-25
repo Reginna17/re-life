@@ -44,7 +44,7 @@ let qa = {
             "nextStatus": "3"
         },
         "no": {
-            "title":"請24小時看護照顧",
+            "title":"請看護照顧",
             "nextStatus": "4"
         }
     },
@@ -89,11 +89,11 @@ let qa = {
         "storySkip": "醫師告訴家人有兩種方向<br>一個是安寧共同照護<br>由安寧團隊與現在原有的醫療團隊結合<br>在治療計畫中加入安寧照護<br>期限為一個月<br>另一種則是轉至安寧緩和醫療照顧的病房<br>只是與當初的目標不同<br>不以治癒疾病為目標，而是提升病人的生活品質為目的<br>若狀況穩定，還是能夠執行出院準備",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/pic7.jpg",
         "yes": {
-            "title":"家人可接受",
+            "title":"可接受",
             "nextStatus": "5"
         },
         "no": {
-            "title":"家人無法接受",
+            "title":"無法接受",
             "nextStatus": "6"
         }
     },
@@ -225,14 +225,14 @@ let qa = {
     },
     "pic191":{
         "selection": false,
-        "title": "讓自己決定如何說再見",
+        "title": "THE END<br>讓自己決定如何說再見",
         "storySkip": "確保了病人即使昏迷或無法清楚表達<br>其意願仍能獲得保障<br>也降低家屬或醫療委任代理人的自責及內疚感",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/19.png",
         "nextStatus": "ENDING"
     },
     "pic20":{
         "selection": false,
-        "title": "加工賴活不如好死",
+        "title": "THE END<br>加工賴活不如好死",
         "storySkip": "隨著醫療科技不斷進步<br>加工賴活也越來越不如好死<br>如果疾病痊癒已經不再可能<br>要選擇減輕痛苦平靜的走？<br>還是在急救和電擊中存活？",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/20.png",
         "nextStatus": "ENDING"
@@ -246,7 +246,7 @@ let qa = {
     },
     "pic211":{
         "selection": false,
-        "title": "家人的壓力",
+        "title": "THE END<br>家人的壓力",
         "storySkip": "「不要為你們所做的決定而感到內疚或自責」<br>「我永遠都知道你們一直是我最愛的家人」<br>「也很抱歉，讓你們承受了做決定的壓力」",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/21.png",
         "nextStatus": "ENDING"
@@ -260,7 +260,7 @@ let qa = {
     },
     "pic23":{
         "selection": false,
-        "title": "為自己做決定",
+        "title": "THE END<br>為自己做決定",
         "storySkip": "從小到大，一直希望能被認同<br>總是走在父母規劃好的道路上<br>一輩子都在為了別人而活<br>而這次我想為了自己做一次選擇<br>也為了家人們將來不會有任何愧疚與壓力",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/23.png",
         "nextStatus": "ENDING"

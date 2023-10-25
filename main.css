@@ -255,7 +255,9 @@ video {
         line-height: 17px;
     }
     .yesNo{
-        height: 35%;
+        height: 40%;
+        width: 80%;
+        left: 10%;
         font-size: 20px;
         line-height: 18px;
 
@@ -267,12 +269,12 @@ video {
         height: 60%;
         width: 75%;
         margin-block: 15%;
-        font-size: 21px;
+        font-size: 18px;
         line-height: 22px;
     }
     .nextstyle{
         width: 8%;
-        height: 8%;
+        height: 6%;
         margin-bottom: 10px;
         left: 90%;
         top: 83%;

@@ -110,7 +110,7 @@ function ending(background){
         <div class="topic">Re-Life</div>
         <div class="storySkip">遊戲沒有返回鍵<br>如同人生選擇後就無法後悔再來一遍<br><br>人從一出生就開始與死亡直面<br>坦然面對才能不抱遺憾<br>為自己的離世提前規劃一份清單</div>
         <div class="QAtest" id="QA">填寫Re-Life問券~</div>
-        <div class="QAtest" id="ACP">了解更多預立安寧及病人自主權立法資訊</div>
+        <div class="QAtest" id="ACP">更多安寧及病人自主權立法資訊</div>
     </div>    
     `;
     board.insertAdjacentHTML('beforeend', endingHtml);
