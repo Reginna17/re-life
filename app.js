@@ -107,9 +107,10 @@ function ending(background){
     gamepic.src = background
     let endingHtml = `
     <div class="content">
-        <div class="topic">我的選擇...?</div>
-        <div class="storySkip">不論選擇哪種方式<br>我們都該為自己的決定負責<br>我們都能決定要用什麼方式說再見</div>
-        <div class="QAtest" id="QA">玩完遊戲後有什麼想說的話嗎?幫我們寫份問券吧~</div>
+        <div class="topic">Re-Life</div>
+        <div class="storySkip">遊戲沒有返回鍵<br>如同人生選擇後就無法後悔再來一遍<br><br>人從一出生就開始與死亡直面<br>坦然面對才能不抱遺憾<br>為自己的離世提前規劃一份清單</div>
+        <div class="QAtest" id="QA">填寫Re-Life問券~</div>
+        <div class="QAtest" id="ACP">了解更多預立安寧及病人自主權立法資訊</div>
     </div>    
     `;
     board.insertAdjacentHTML('beforeend', endingHtml);
@@ -117,6 +118,10 @@ function ending(background){
     QAtest.addEventListener("click",function(){
         window.location.href="https://www.surveycake.com/s/eYoRX"
     })
+    let ACPbtn =document.getElementById("ACP")
+    ACPbtn.addEventListener("click",function(){
+        window.location.href="https://hpcod.mohw.gov.tw/HospWeb/RWD/PageType/acp/introduction.aspx"
+    }) 
 } 
 function answer(ans){
     console.log(qa[gameStatus].nextStatus)
