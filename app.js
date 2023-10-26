@@ -58,7 +58,7 @@ startBtn.addEventListener("click",function(){
         board.innerHTML = ""
         audio.play();
         changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
-    })
+    });
     faintvideo.addEventListener('ended', function() {
         if (document.exitFullscreen) {
             document.exitFullscreen();
