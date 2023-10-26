@@ -59,6 +59,7 @@ startBtn.addEventListener("click",function(){
         audio.play();
         changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
     });
+    document.addEventListener('DOMContentLoaded', function() {
     faintvideo.addEventListener('ended', function() {
         if (document.exitFullscreen) {
             document.exitFullscreen();
@@ -70,7 +71,8 @@ startBtn.addEventListener("click",function(){
             document.msExitFullscreen();
         }
     });
-});
+    });
+})
 function changePic(topic, storySkip, yes, no, background){
     board.innerHTML = ""
     gamepic.src = background
