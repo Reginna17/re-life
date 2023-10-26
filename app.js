@@ -59,19 +59,6 @@ startBtn.addEventListener("click",function(){
         audio.play();
         changePic(qa[gameStatus].title, qa[gameStatus].storySkip, qa[gameStatus].yes.title, qa[gameStatus].no.title, qa[gameStatus].pic)
     });
-    document.addEventListener('DOMContentLoaded', function() {
-    faintvideo.addEventListener('ended', function() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) { // Chrome, Opera and Safari
-            document.webkitExitFullscreen();
-        } else if (document.mozCancelFullScreen) { // Firefox
-            document.mozCancelFullScreen();
-        } else if (document.msExitFullscreen) { // IE/Edge
-            document.msExitFullscreen();
-        }
-    });
-    });
 })
 function changePic(topic, storySkip, yes, no, background){
     board.innerHTML = ""
