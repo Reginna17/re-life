@@ -256,7 +256,7 @@ let qa = {
         "title": "預立醫療照護諮商",
         "storySkip": "這幾天反覆思考<br>看著醫師遞給我的資訊<br>我屬於腦腫瘤末期<br>是符合簽署預立醫療決定的病人<br>但簽署之前還是需要找其他家人<br>一起去門診跟諮商小組仔細會談了解內容",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/22.png",
-        "nextStatus": "pic23"
+        "nextStatus": "pic25"
     },
     "pic23":{
         "selection": false,
@@ -265,4 +265,96 @@ let qa = {
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/23.png",
         "nextStatus": "ENDING"
     },
+    "pic25":{
+        "selection": false,
+        "title": "預立醫療諮商",
+        "storySkip": "選擇了一個陽光明媚的午後<br>帶著爸媽還有我哥跟朋友一起去了預立醫療照護諮商門診<br>過程中雖然難免會有意見衝突<br>但經過解釋後他們還是可以了解我的想法<br>在諮商小組充分說明解釋後",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/25.png",
+        "nextStatus": "pic26"
+    },
+    "pic26":{
+        "selection": true,
+        "title": "我的意願與決定",
+        "storySkip": "A不希望接受維生醫療及不希望接受人工營養及流體餵養<br>B希望在半年內，接受化學治療的嘗試之後停止<br>但本人或醫療委任代理人能於期間內<br>隨時表達停止的意願<br>不希望接受人工營養及流體餵養",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/26.png",
+        "yes": {
+            "title":"選擇A方案",
+            "nextStatus": "pic27"
+        },
+        "no": {
+            "title":"選擇B方案",
+            "nextStatus": "pic31"
+        }
+    },
+    "pic27":{
+        "selection": false,
+        "title": "未來",
+        "storySkip": "當然，我曉得並不是簽屬後就表示放棄<br>在已經不可能治癒時<br>不想使用機器式維生系統來延長無謂的生命，甚至造成感染等併發症<br>不想承擔因CPR造成肋骨斷裂及器官破裂等風險",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/27.png",
+        "nextStatus": "pic271"
+    },
+    "pic271":{
+        "selection": false,
+        "title": "未來",
+        "storySkip": "不想即使救了回來，大腦也可能缺氧<br>造成永久性損傷，而成為植物人<br>不想治療後還要額外承受可能發生的不良反應及副作用<br>更不想使用抗生素只是控制感染，卻無法逆轉疾病",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/27.png",
+        "nextStatus": "pic28"
+    },
+    "pic28":{
+        "selection": false,
+        "title": "我還能做甚麼...",
+        "storySkip": "醫師說癌症已經不能治療<br>但安寧緩和醫療可以透過醫療處置，改善不適症狀，提升生活品質<br>我聽了醫師的建議去緩和醫療門診<br>思考很多關於死亡的事",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/28.png",
+        "nextStatus": "pic281"
+    },
+    "pic281":{
+        "selection": false,
+        "title": "我還能做甚麼...",
+        "storySkip": "因為有太多想說的話<br>我只能以寫信方式給我最愛的家人<br>謝謝他們，多愛他們，對不起他們，還有再見",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/28.png",
+        "nextStatus": "pic29"
+    },
+    "pic29":{
+        "selection": false,
+        "title": "我的旅程",
+        "storySkip": "趁著身體狀況還算穩定<br>收拾行李，揹上背包<br>我完成了之前沒辦法完成的環島之旅<br>後來，我再也無法從床上下來<br>不曉得是因為長時間的亢奮後鬆懈<br>導致我的疾病突然惡化<br>還是其實我已經準備跟這個世界說再見",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/29.png",
+        "nextStatus": "pic30"
+    },
+    "pic30":{
+        "selection": false,
+        "title": "THE END<br>最後一哩路",
+        "storySkip": "在走向生命盡頭的路上<br>很高興我為自己做了決定<br>慶幸自己不是被傳統醫療文化重視的家庭及醫療父權主義下所犧牲的人<br>在親愛的家人陪伴下，度過生命最後一刻<br>讓生命的最後一哩路沒有遺憾",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/30.png",
+        "nextStatus": "ENDING" 
+    },
+    "pic31":{
+        "selection": false,
+        "title": "限時嘗試治療",
+        "storySkip": "我希望限時嘗試治療的期限為半年<br>哪怕只有一點好轉的可能<br>不想太快放棄的我<br>還是可以再忍受這半年治療所帶來的痛苦",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/31.png",
+        "nextStatus": "pic32"
+    },
+    "pic32":{
+        "selection": false,
+        "title": "決定放下",
+        "storySkip": "治療始終還是敵不過癌細胞擴散的速度<br>這半年並沒有使我的腦癌好轉<br>我又因為治療再次承受虛弱、噁心嘔吐、口腔潰瘍等副作用<br>不過正因為有限時嘗試治療<br>我曉得自己的極限在哪<br>所以甘願放下",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/32.png",
+        "nextStatus": "pic33"
+    },
+    "pic33":{
+        "selection": false,
+        "title": "THE END<br>向殘酷的仁慈說再見",
+        "storySkip": "存在主義哲學之父海德格：「向死而生的意義是<br>當你無限接近死亡，才能深切體會生的意義」<br><br>因為生病，我開始面對死亡<br>因為病人自主權利法，我開始學會如何準備死亡<br>人終將會死，只是你無法選擇什麼時候死去",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/33.png",
+        "nextStatus": "pic331"
+    },
+    "pic331":{
+        "selection": false,
+        "title": "THE END<br>向殘酷的仁慈說再見",
+        "storySkip": "我最後的記憶停留在限時嘗試治療結束後的第一天<br>我告訴他們把我樹葬<br>不用每年都來看我<br>只要偶爾想起我",
+        "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/33.png",
+        "nextStatus": "ENDING"
+    },
+
 }

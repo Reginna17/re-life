@@ -45,9 +45,13 @@ mediaBtn.addEventListener("click",function(){
 startBtn.addEventListener("click",function(){
     console.log("要換影片了")
     let storyHtml = `
-        <div class="storybegin"> 
-            <video class="faint" id="faint" autoplay src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/最終更新影片.mov" type="video/mp4"></video>
-            <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/forward.png"></img>
+        <div class="storybegin">
+            <div class="faint" id="faint">
+                <video autoplay>
+                <source src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/最終更新影片.mov" type="video/mp4">
+                </video>
+            </div>
+            <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/圖片1.png"></img>
         </div>`;
     board.insertAdjacentHTML('beforeend', storyHtml);
     let nextstyleBtn = document.getElementById("nextbottom")
@@ -92,7 +96,7 @@ function skipPic(telling,skipPic,storySkip){
     <div class="content">
         <div class="telling">${telling}</div>
         <div class="storySkip">${storySkip}</div>
-        <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/forward.png"></img>
+        <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/圖片1.png"></img>
         </div>
     `;
     board.insertAdjacentHTML('beforeend',skipHtml);

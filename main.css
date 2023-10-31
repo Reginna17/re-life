@@ -91,9 +91,8 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    z-index: -1000;
 }
-video {
+video{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,13 +104,13 @@ video {
     object-fit: cover;
 }
 .nextstyle{
-    width: 5%;
-    height: 8%;
+    width: 15%;
+    height: 12%;
     cursor: pointer;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    left: 90%;
+    left: 80%;
     top: 83%;
     position: absolute;
 }
@@ -236,18 +235,6 @@ video {
         font-size: 20px;
         width: 100%;
     }
-    .firstvideo{
-        position: relative;
-        width: 85%;
-        z-index: -1000;
-    }
-    video {
-        min-width: 75%;
-        min-height: 75%;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
     .topic{
         color:seashell;
         font-size: 20px;
@@ -274,10 +261,21 @@ video {
         line-height: 22px;
     }
     .nextstyle{
-        width: 8%;
-        height: 6%;
+        width: 20%;
+        height: 10%;
         margin-bottom: 10px;
-        left: 90%;
+        left: 80%;
         top: 83%;
+    }
+    video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 75%;
+        min-height: 75%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
     }
 } 
