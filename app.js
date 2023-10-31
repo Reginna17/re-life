@@ -46,6 +46,7 @@ startBtn.addEventListener("click",function(){
     console.log("要換影片了")
     let storyHtml = `
         <div class="storybegin">
+            <div class="topic" id="hint">手機可上滑關閉畫面↑</div>
             <div class="faint" id="faint">
                 <video autoplay>
                 <source src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/最終更新影片.mov" type="video/mp4">
