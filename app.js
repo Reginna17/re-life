@@ -18,11 +18,6 @@ startBtn.addEventListener("click",function(){
     selections.innerHTML = "";
     audio.pause();
     titlepic.style.display = 'none';
-    //videoBtn.style.display = 'none';
-    //startBtn.style.display = 'none';
-    //informationBtn.style.display = 'none';
-    //titlepic.style.display = 'none';
-    //mediaBtn.style.display ='none';
 })
 videoBtn.addEventListener("click", shark)
 function shark(){
@@ -46,12 +41,12 @@ startBtn.addEventListener("click",function(){
     console.log("要換影片了")
     let storyHtml = `
         <div class="storybegin">
-            <div class="topic" id="hint">手機可上滑關閉畫面↑</div>
             <div class="faint" id="faint">
                 <video autoplay>
                 <source src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/最終更新影片.mov" type="video/mp4">
                 </video>
             </div>
+            <div class="hint" id="hint">下滑關閉畫面</div>
             <img class="nextstyle" id="nextbottom" src="https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/圖片1.png"></img>
         </div>`;
     board.insertAdjacentHTML('beforeend', storyHtml);
