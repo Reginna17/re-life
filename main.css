@@ -145,7 +145,7 @@ video{
     margin-bottom: 0;
     margin-top: 15px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.277);
+    background-color: rgba(0, 0, 0, 0.473);
     user-select: none;
 }
 .yesNo{
@@ -161,6 +161,7 @@ video{
     font-family :Chalkduster, fantasy;
     overflow-wrap: break-word;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.229);
 }
 .choose{
     padding: 40px;
@@ -197,7 +198,7 @@ video{
     justify-content: center;
     align-items: center;
     font-family :Chalkduster, fantasy;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.654);
     overflow-wrap: break-word;
     user-select: none;
 }
@@ -209,7 +210,7 @@ video{
     justify-content: center;
     align-items: center;
     font-family :Chalkduster, fantasy;
-    background-color: rgba(26, 26, 26, 0.538);
+    background-color: rgba(26, 26, 26, 0.836);
     overflow-wrap: break-word;
     user-select: none;
 }
