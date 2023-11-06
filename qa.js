@@ -219,7 +219,7 @@ let qa = {
     "pic19":{
         "selection": false,
         "title": "讓自己決定如何說再見",
-        "storySkip": "多年後，隨著時代進步<br>病人自主權立法的推行<br>醫療文化不再重視家庭及醫療父權主義<br>而是將決定權交還給病人",
+        "storySkip": "多年後，隨著時代進步<br>病人自主權利法的推行<br>醫療文化不再重視家庭及醫療父權主義<br>而是將決定權交還給病人",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/19.png",
         "nextStatus": "pic191"
     },
@@ -289,7 +289,7 @@ let qa = {
     "pic27":{
         "selection": false,
         "title": "未來",
-        "storySkip": "當然，我曉得並不是簽屬後就表示放棄<br>在已經不可能治癒時<br>不想使用機器式維生系統來延長無謂的生命，甚至造成感染等併發症<br>不想承擔因CPR造成肋骨斷裂及器官破裂等風險",
+        "storySkip": "當然，我曉得並不是簽署後就表示放棄<br>在不可能治癒時<br>不想使用機器式維生系統來延長無謂的生命，甚至造成感染等併發症<br>不想承擔因CPR造成肋骨斷裂及器官破裂等風險",
         "pic": "https://pub-40e07f428a124fd39e46fbb640611db6.r2.dev/27.png",
         "nextStatus": "pic271"
     },
