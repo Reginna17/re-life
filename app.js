@@ -22,7 +22,7 @@ startBtn.addEventListener("click",function(){
 videoBtn.addEventListener("click", shark)
 function shark(){
     console.log("鯊魚寶寶來了喔( ´థ౪థ）σ")
-    window.location.href="https://youtu.be/RgkogvXAy9Q?si=gZ0OXJrKPq9sG9jB"
+    window.location.href="https://youtu.be/jiRuouV6KNI?si=53iVGaBF_StN0k_w"
 }
 informationBtn.addEventListener("click",function(){
     console.log("長官我可以加薪嗎QAQ")
